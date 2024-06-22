@@ -1,0 +1,40 @@
+{
+  "stages": [
+    {
+      "name": "stage",
+      "isParallel": true,
+      "jobs": [
+        {
+          "name": "job1",
+          "arguments": [
+            "-i", "./input",
+            "-o", "./output"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stage 2",
+      "isParallel": true,
+      "jobs": [
+        {
+          "name": "job1",
+          "arguments": [
+            "-i", "./input",
+            "-o", "./output"
+          ]
+        },
+        {
+          "name": "job2",
+          "arguments": [
+            "-i", "./input",
+            "-o", "./output"
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
